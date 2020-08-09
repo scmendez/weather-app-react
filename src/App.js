@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import Weather from "./Weather";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         >
           Learn React
         </a>
+        <Weather city="Paris" />
+        <Weather city="Sydney" />
+        <Weather city="Madrid" />
       </header>
     </div>
   );
