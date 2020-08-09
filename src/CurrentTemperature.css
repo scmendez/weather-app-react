@@ -1,0 +1,8 @@
+.CurrentTemperature {
+  display: block;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: -20px;
+  margin-left: -40px;
+  color: #fff;
+}

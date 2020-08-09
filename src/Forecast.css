@@ -1,0 +1,23 @@
+.Forecast {
+  text-align: center;
+  margin-top: 10px;
+}
+.day {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.date {
+  color: #add8e6;
+  padding: 0 0 5px 0;
+}
+.WeatherIcon {
+  display: flex;
+  margin: -25px auto -18px auto;
+}
+.high {
+  color: #fcc29a;
+}
+.low {
+  color: #29d2e4;
+}
