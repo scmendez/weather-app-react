@@ -87,18 +87,6 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="GitHubFooter">
-        <p>
-          <a
-            href="https://github.com/scmendez/weather-app-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open-source code
-          </a>{" "}
-          by Sandra Mendez.
-        </p>
-      </div>
     </div>
   );
 }
