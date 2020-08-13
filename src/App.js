@@ -92,6 +92,7 @@ export default function App() {
           <a
             href="https://github.com/scmendez/weather-app-react"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Open-source code
           </a>{" "}
