@@ -1,10 +1,10 @@
 import React from "react";
 import "./CurrentInfo.css";
 
-export default function CurrentInfo() {
+export default function CurrentInfo(props) {
   return (
     <div className="CurrentInfo">
-      <h1>Madrid</h1>
+      <h1>{props.data.city}</h1>
       <div className="row">
         <div className="col-9">
           <div className="TodaysDate">
@@ -15,16 +15,24 @@ export default function CurrentInfo() {
               <i className="fas fa-sun" />
             </div>
             <div className="TodaysWeatherWord">
-              <p>Clear sky</p>
+              <p>{props.data.description}</p>
             </div>
           </div>
           <div className="TodaysHighLow">
             <div className="TodaysHighLowTitle">High: </div>
-            <div className="TodaysHigh"> &nbsp; 36°</div>
+            <div className="TodaysHigh">
+              {" "}
+              &nbsp; {Math.round(props.data.high)}°
+            </div>
             <div className="TodaysHighLowTitle"> &nbsp; Low: </div>
-            <div className="TodaysLow"> &nbsp; 33°</div>
+            <div className="TodaysLow">
+              {" "}
+              &nbsp; {Math.round(props.data.low)}°
+            </div>
           </div>
-          <div className="CurrentTemperature">35</div>
+          <div className="CurrentTemperature">
+            {Math.round(props.data.currentTemp)}
+          </div>
           <div className="TempUnits">
             <button className="Active">°C</button> |<button> °F</button>
           </div>
@@ -33,11 +41,11 @@ export default function CurrentInfo() {
         <div className="col-3">
           <div className="Wind">
             <div className="WeatherDetailTitle">Wind</div>
-            <div className="WeatherDetailInfo">3.1 km/hr</div>
+            <div className="WeatherDetailInfo">{props.data.wind} km/hr</div>
           </div>
           <div className="Humidity">
             <div className="WeatherDetailTitle">Humidity</div>
-            <div className="WeatherDetailInfo">12%</div>
+            <div className="WeatherDetailInfo">{props.data.humidity}%</div>
           </div>
           <div className="Sunrise">
             <div className="WeatherDetailTitle">Sunrise</div>

@@ -6,7 +6,7 @@ import GitHubLink from "./GitHubLink";
 export default function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity="Madrid" />
       <GitHubLink />
     </div>
   );
