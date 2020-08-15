@@ -1,0 +1,23 @@
+.Weather {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  margin: 10px auto;
+  padding: 10px;
+  border: solid 1px green;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 5px 5px 8px lightgray;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.searchButton,
+.currentLocationButton {
+  color: #fff;
+  font-size: 24px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.ForecastRow {
+  margin: 0px;
+}

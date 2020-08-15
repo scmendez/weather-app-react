@@ -3,7 +3,7 @@ import "./Forecast.css";
 
 export default function Forecast({ day, date, weatherIcon, high, low }) {
   return (
-    <div className="Forecast">
+    <div className="Forecast col">
       <div className="day">{day}</div>
       <div className="date">{date}</div>
       <div className="WeatherIcon">

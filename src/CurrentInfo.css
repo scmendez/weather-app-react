@@ -1,0 +1,80 @@
+h1 {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #add8e6;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-left: 18px;
+}
+button {
+  background-color: Transparent;
+  border: none;
+  outline: none;
+}
+.TodaysWeatherDescription {
+  margin: 0px auto 5px 18px;
+  display: flex;
+  color: #fff;
+}
+.TodaysWeatherIcon {
+  width: 25px;
+}
+.TodaysWeatherWord {
+  text-transform: capitalize;
+}
+.TodaysHighLow {
+  margin: -22px auto 5px 18px;
+  display: flex;
+}
+.TodaysHighLowTitle {
+  color: #fff;
+}
+.TodaysHigh {
+  color: #fcc29a;
+}
+.TodaysLow {
+  color: #29d2e4;
+}
+.CurrentTemperature {
+  display: block;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: -20px;
+  margin-left: -40px;
+  color: #fff;
+}
+.TempUnits {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: -70px;
+  right: -175px;
+  border: none;
+  outline: none;
+}
+.TempUnits a {
+  color: #fff;
+}
+.TempUnits .Active {
+  color: #fff;
+  font-weight: bold;
+  cursor: default;
+  border: none;
+  outline: none;
+}
+.TempUnits .Active:hover {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.WeatherDetailTitle {
+  color: #fff;
+}
+.WeatherDetailInfo {
+  color: #add8e6;
+}

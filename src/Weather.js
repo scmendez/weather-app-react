@@ -1,19 +1,69 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+import CurrentInfo from "./CurrentInfo";
+import Forecast from "./Forecast";
+import "./Weather.css";
 
-export default function Weather(props) {
-  let [celTemp, setCelTemp] = useState(null);
-
-  function showTemp(response) {
-    setCelTemp(response.data.main.temp);
-  }
-
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&units=metric&appid=2f036bba5972d2593243a4f078d73ef2`;
-  axios.get(url).then(showTemp);
-
+export default function Weather() {
   return (
-    <h1>
-      The temperature in {props.city} is {Math.round(celTemp)}°C
-    </h1>
+    <div className="Weather">
+      <div className="row">
+        <div className="col-9">
+          <form id="search-city">
+            <input
+              type="search"
+              placeholder="Search a city"
+              autoFocus="on"
+              autoComplete="off"
+              className="form-control shadow-sm"
+            />
+          </form>
+        </div>
+        <div className="col-3">
+          <i className="fas fa-search searchButton" id="search-city-button" />
+          <i
+            className="fas fa-map-marker-alt currentLocationButton"
+            id="current-location-button"
+          />
+        </div>
+      </div>
+      <CurrentInfo />
+      <div className="row ForecastRow">
+        <Forecast
+          day="Tue"
+          date="21/7"
+          weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
+          high="36°"
+          low="28°"
+        />
+        <Forecast
+          day="Tue"
+          date="21/7"
+          weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
+          high="36°"
+          low="28°"
+        />
+        <Forecast
+          day="Tue"
+          date="21/7"
+          weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
+          high="36°"
+          low="28°"
+        />
+        <Forecast
+          day="Tue"
+          date="21/7"
+          weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
+          high="36°"
+          low="28°"
+        />
+        <Forecast
+          day="Tue"
+          date="21/7"
+          weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
+          high="36°"
+          low="28°"
+        />
+      </div>
+    </div>
   );
 }

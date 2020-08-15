@@ -3,13 +3,11 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import App from "./App";
-import GitHubLink from "./GitHubLink";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <GitHubLink />
   </React.StrictMode>,
   document.getElementById("root")
 );

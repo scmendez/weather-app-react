@@ -11,9 +11,10 @@
   color: #add8e6;
   padding: 0 0 5px 0;
 }
-.WeatherIcon {
-  display: flex;
-  margin: -25px auto -18px auto;
+.WeatherIcon img {
+  margin: -15px auto -10px auto;
+  display: block;
+  height: 50px;
 }
 .high {
   color: #fcc29a;
