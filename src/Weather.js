@@ -20,6 +20,7 @@ export default function Weather(props) {
       currentTemp: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
     });
   }
 

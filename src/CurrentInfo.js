@@ -1,5 +1,6 @@
 import React from "react";
 import "./CurrentInfo.css";
+import FormattedDate from "./FormattedDate";
 
 export default function CurrentInfo(props) {
   return (
@@ -8,7 +9,9 @@ export default function CurrentInfo(props) {
       <div className="row">
         <div className="col-9">
           <div className="TodaysDate">
-            <h2>Mon, July 20, 2020</h2>
+            <h2>
+              <FormattedDate data={props.data.date} />
+            </h2>
           </div>
           <div className="TodaysWeatherDescription">
             <div className="TodaysWeatherIcon">
