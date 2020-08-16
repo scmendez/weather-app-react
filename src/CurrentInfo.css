@@ -21,8 +21,8 @@ button {
   display: flex;
   color: #fff;
 }
-.TodaysWeatherIcon img {
-  width: 25px;
+.TodaysWeatherIcon canvas {
+  margin-right: 5px;
 }
 .TodaysWeatherWord {
   text-transform: capitalize;
