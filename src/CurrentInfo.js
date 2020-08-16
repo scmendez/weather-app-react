@@ -16,7 +16,7 @@ export default function CurrentInfo(props) {
           </div>
           <div className="TodaysWeatherDescription">
             <div className="TodaysWeatherIcon">
-              <i className="fas fa-sun" />
+              <img src={props.data.icon} alt="weather icon" />
             </div>
             <div className="TodaysWeatherWord">
               <p>{props.data.description}</p>

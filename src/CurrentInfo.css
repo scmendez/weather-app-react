@@ -21,7 +21,7 @@ button {
   display: flex;
   color: #fff;
 }
-.TodaysWeatherIcon {
+.TodaysWeatherIcon img {
   width: 25px;
 }
 .TodaysWeatherWord {
