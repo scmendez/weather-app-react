@@ -1,6 +1,7 @@
 import React from "react";
 import "./CurrentInfo.css";
 import FormattedDate from "./FormattedDate";
+import FormattedSunriseSunset from "./FormattedSunriseSunset";
 
 export default function CurrentInfo(props) {
   return (
@@ -52,11 +53,15 @@ export default function CurrentInfo(props) {
           </div>
           <div className="Sunrise">
             <div className="WeatherDetailTitle">Sunrise</div>
-            <div className="WeatherDetailInfo">07:01</div>
+            <div className="WeatherDetailInfo">
+              <FormattedSunriseSunset data={props.data.sunrise} />
+            </div>
           </div>
           <div className="Sunset">
             <div className="WeatherDetailTitle">Sunset</div>
-            <div className="WeatherDetailInfo">21:47</div>
+            <div className="WeatherDetailInfo">
+              <FormattedSunriseSunset data={props.data.sunset} />
+            </div>
           </div>
         </div>
       </div>
