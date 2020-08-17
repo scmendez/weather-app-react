@@ -17,7 +17,7 @@ button {
   outline: none;
 }
 .TodaysWeatherDescription {
-  margin: 0px auto 5px 18px;
+  margin: 0px 10px 5px 18px;
   display: flex;
   color: #fff;
 }
@@ -72,6 +72,9 @@ button {
   text-decoration: none;
   border: none;
   outline: none;
+}
+.WeatherDetails {
+  margin-left: -13px;
 }
 .WeatherDetailTitle {
   color: #fff;

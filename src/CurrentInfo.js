@@ -41,10 +41,12 @@ export default function CurrentInfo(props) {
           <div className="TempUnits">°C</div>
         </div>
 
-        <div className="col-3">
+        <div className="WeatherDetails col-3">
           <div className="Wind">
             <div className="WeatherDetailTitle">Wind</div>
-            <div className="WeatherDetailInfo">{props.data.wind} km/hr</div>
+            <div className="WeatherDetailInfo">
+              {Math.round(props.data.wind)} km/hr
+            </div>
           </div>
           <div className="Humidity">
             <div className="WeatherDetailTitle">Humidity</div>

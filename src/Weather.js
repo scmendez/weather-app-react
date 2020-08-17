@@ -71,7 +71,7 @@ export default function Weather(props) {
               />
             </form>
           </div>
-          <div className="col-3">
+          <div className="buttons col-3">
             <i
               className="fas fa-search searchButton"
               id="search-city-button"
