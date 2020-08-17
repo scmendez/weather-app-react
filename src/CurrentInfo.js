@@ -1,6 +1,6 @@
 import React from "react";
 import "./CurrentInfo.css";
-import FormattedDate from "./FormattedDate";
+import CurrentDate from "./CurrentDate";
 import FormattedSunriseSunset from "./FormattedSunriseSunset";
 import WeatherIcon from "./WeatherIcon";
 
@@ -12,7 +12,7 @@ export default function CurrentInfo(props) {
         <div className="col-9">
           <div className="TodaysDate">
             <h2>
-              <FormattedDate data={props.data.date} />
+              <CurrentDate data={props.data.date} />
             </h2>
           </div>
           <div className="TodaysWeatherDescription">

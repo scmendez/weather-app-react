@@ -13,6 +13,8 @@ export default function Weather(props) {
     console.log(response);
     setWeatherData({
       ready: true,
+      latitude: response.data.coord.lat,
+      longitude: response.data.coord.lon,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
@@ -67,43 +69,7 @@ export default function Weather(props) {
           </div>
         </div>
         <CurrentInfo data={weatherData} />
-        <div className="row ForecastRow">
-          <Forecast
-            day="Tue"
-            date="21/7"
-            weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
-            high="36°"
-            low="28°"
-          />
-          <Forecast
-            day="Wed"
-            date="22/7"
-            weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
-            high="36°"
-            low="28°"
-          />
-          <Forecast
-            day="Thu"
-            date="23/7"
-            weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
-            high="36°"
-            low="28°"
-          />
-          <Forecast
-            day="Fri"
-            date="24/7"
-            weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
-            high="36°"
-            low="28°"
-          />
-          <Forecast
-            day="Sat"
-            date="25/7"
-            weatherIcon={"http://openweathermap.org/img/wn/01d@2x.png"}
-            high="36°"
-            low="28°"
-          />
-        </div>
+        <Forecast data={weatherData} />
       </div>
     );
   } else {

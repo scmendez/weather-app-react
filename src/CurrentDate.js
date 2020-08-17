@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FormattedDate(props) {
+export default function CurrentDate(props) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = days[props.data.getDay()];
 
