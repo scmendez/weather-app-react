@@ -49,30 +49,16 @@ button {
   color: #fff;
 }
 .TempUnits {
-  font-size: 16px;
+  font-size: 24px;
   color: #fff;
   position: relative;
-  top: -70px;
-  right: -175px;
+  top: -73px;
+  right: -155px;
   border: none;
   outline: none;
   font-weight: 650;
 }
-.TempUnits a {
-  color: #fff;
-}
-.TempUnits .Active {
-  color: #fff;
-  font-weight: bold;
-  cursor: default;
-  border: none;
-  outline: none;
-}
-.TempUnits .Active:hover {
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
+
 .WeatherDetails {
   margin-left: -13px;
 }
