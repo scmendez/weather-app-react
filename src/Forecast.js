@@ -8,7 +8,6 @@ export default function Forecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function forecastResponse(response) {
-    console.log(response);
     setForecast(response.data);
     setLoaded(true);
   }
