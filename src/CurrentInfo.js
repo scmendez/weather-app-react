@@ -38,9 +38,7 @@ export default function CurrentInfo(props) {
           <div className="CurrentTemperature">
             {Math.round(props.data.currentTemp)}
           </div>
-          <div className="TempUnits">
-            <button className="Active">°C</button> |<button> °F</button>
-          </div>
+          <div className="TempUnits">°C</div>
         </div>
 
         <div className="col-3">
